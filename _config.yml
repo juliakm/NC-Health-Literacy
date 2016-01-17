@@ -12,6 +12,7 @@ timezone: null
 lsi: false
 markdown: kramdown
 highlighter: pygments
+baseurl: /NC-Health-Literacy
 
 
 ### content configuration ###
