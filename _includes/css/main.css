@@ -355,3 +355,25 @@ nav ul li:hover, nav ul li.active {
     column-count:         2;
   }
 }
+
+/* ----- special blockquote style ----- */
+blockquote {
+  background: #ffffff;
+  border: 1px solid black;
+  opacity: 0.4;
+  filter: alpha(opacity=40); /* For IE8 and earlier */
+  border-left: 10px solid #2e2e2e;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote p, blockquote .container p {
+  display: inline;
+  font-style: normal;
+  padding: 0;
+}
+
+blockquote a {
+  color: c[1];
+}
