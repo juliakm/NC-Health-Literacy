@@ -21,7 +21,7 @@ html { box-sizing: border-box; }
   {% capture fg %}{% if site.colors[node.color] %}{{ site.colors[node.color] }}{% else %}{{ node.color }}{% endif %}{% endcapture %}
   nav .p-{{id}} { border-color: {{ bg }}; }
   #{{id}} { background-color: {{ bg }} !important; color: {{ fg }}; }
-  #{{id}} a { color: {{ fg }}; }
+  /*#{{id}} a { color: {{ fg }}; }*/
   #{{id}} .sectiondivider { color: {{ bg }}; }
 {% endfor %}
 
@@ -369,11 +369,11 @@ blockquote {
 }
 
 blockquote p, blockquote .container p {
-  display: inline;
+  /*display: inline;*/
   font-style: normal;
   padding: 0;
 }
 
 blockquote a {
-  color: c[1];
+  color: inherit;
 }
