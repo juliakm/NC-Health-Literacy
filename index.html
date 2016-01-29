@@ -70,7 +70,7 @@
       {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
       <div id="{{id}}" class="section p-{{id}}">
         {% if page.icon %}
-        <div class="subtlecircle sectiondivider imaged">
+        <div class="subtlecircle sectiondivider faicon">          
           <img src="{{page.icon}}" alt="section icon" />
           <h5 class="icon-title">{{ page.title }}</h5>
         </div>

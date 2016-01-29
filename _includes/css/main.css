@@ -381,3 +381,11 @@ blockquote a {
 #chart_div {
   float: right;
 }
+
+.section .icon img {
+  width: 40px;
+}
+
+#smoke .sectiondivider {
+  color: white;
+}
