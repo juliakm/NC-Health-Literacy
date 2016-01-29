@@ -13,6 +13,47 @@
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
   {% if site.favicon %}<link rel="shortcut icon" href="{{ site.favicon }}" type="image/x-icon">{% endif %}
 	{% if site.touch_icon %}<link rel="apple-touch-icon" href="{{ site.touch_icon }}">{% endif %}
+  <!--Load the AJAX API-->
+     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+     <script type="text/javascript">
+
+       // Load the Visualization API and the piechart package.
+       google.load('visualization', '1.0', {'packages':['corechart']});
+
+       // Set a callback to run when the Google Visualization API is loaded.
+       google.setOnLoadCallback(drawChart);
+
+       function drawChart() {
+
+         // Create the data table.
+         var data = new google.visualization.DataTable();
+         data.addColumn('string', 'Health Status');
+         data.addColumn('number', 'Number of Members');
+         data.addColumn({type: 'string', role: 'tooltip'});
+         data.addRows([
+           ['Healthy', 319231, 'Healthy: 31,931 members'],
+           ['Hypertension', 80482, 'Hypertension: 80,482 members'],
+           ['Back and Joint Issues', 65349, 'Back and Joint Issues: 65,349 members'],
+           ['Diabetes', 29235, 'Diabetes: 29,235 members'],
+           ['Mental Health', 24764, 'Mental Health: 24,764 members'],
+           ['Catastrophic Health Issue', 4675, 'Catastrophic Health Issue: 31,931 members'],
+           ['Other Chronic Issue', 144112, 'Other Chronic Issue: 144,112 members'],
+         ]);
+
+         // Set chart options
+         var options = {'title':'Member Health Profile (July 2013)',
+                        is3D: true,
+                        'width':500,
+                        'height':300,
+                        backgroundColor: '#f7f7f7',
+};
+
+         // Instantiate and draw our chart, passing in some options.
+         var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+         chart.draw(data, options);
+       }
+     </script>
+
 </head>
 <body>
   <div id="main">

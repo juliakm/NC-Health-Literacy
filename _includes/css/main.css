@@ -377,3 +377,7 @@ blockquote p, blockquote .container p {
 blockquote a {
   color: inherit;
 }
+
+#chart_div {
+  float: right;
+}
