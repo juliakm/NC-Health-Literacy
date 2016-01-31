@@ -372,6 +372,7 @@ blockquote p, blockquote .container p {
   /*display: inline;*/
   font-style: normal;
   padding: 0;
+  color: black;
 }
 
 blockquote a {
