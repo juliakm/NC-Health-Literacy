@@ -387,5 +387,27 @@ blockquote a {
 }
 
 #smoke .sectiondivider {
-  color: white;
+  /*color: white;*/
+}
+
+#smoke .faicon img {
+  width: 45%;
+  margin-left: -25%;
+  margin-top: 1%;
+  color: #FFFFFF !important;
+}
+
+#smoke .faicon img {
+  position: absolute;
+}
+
+img[src$='#section-image'] {
+  float: right;
+  width: 40%;
+  padding: 10px 10px 0 #eee;
+  /*margin: 2px 4px;
+  border: 2px solid #808080;*/
+  background:#ffffff;
+  padding:5px;
+  border:1px solid #999999;
 }
